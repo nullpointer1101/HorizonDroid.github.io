@@ -1,53 +1,31 @@
-import React, { useEffect, Suspense, lazy } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
-import Layout from './components/js/Layout';
+import React, { useEffect } from 'react';
+import Home from './components/pages/Home.jsx';
 
-const Home = lazy(() => import('./pages/Home'));
-const Devices = lazy(() => import('./pages/Devices'));
-const Build = lazy(() => import('./pages/Build'));
-
-function AppRoutes() {
-  const location = useLocation();
-  const navigate = useNavigate();
-
+/* Scroll-reveal: writes classes inside rAF to avoid INP warnings */
+function useReveal() {
   useEffect(() => {
-    const params = new URLSearchParams(location.search);
-    const path = params.get('path');
-
-    if (path) {
-      params.delete('path');
-      const newSearch = params.toString() ? `?${params.toString()}` : '';
-
-      navigate(
-        {
-          pathname: `/${path}`,
-          search: newSearch,
-          hash: location.hash,
+    const id = requestAnimationFrame(() => {
+      const io = new IntersectionObserver(
+        (entries) => {
+          requestAnimationFrame(() => {
+            entries.forEach((e) => {
+              if (e.isIntersecting) {
+                e.target.classList.add('visible');
+                io.unobserve(e.target);
+              }
+            });
+          });
         },
-        { replace: true }
+        { threshold: 0.1, rootMargin: '0px 0px -40px 0px' }
       );
-    }
-  }, [location, navigate]);
-
-  return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="devices" element={<Devices />} />
-          <Route path="build" element={<Build />} />
-        </Route>
-      </Routes>
-    </Suspense>
-  );
+      document.querySelectorAll('.reveal:not(.visible)').forEach((el) => io.observe(el));
+      return () => io.disconnect();
+    });
+    return () => cancelAnimationFrame(id);
+  });
 }
 
-function App() {
-  return (
-    <Router>
-      <AppRoutes />
-    </Router>
-  );
+export default function App() {
+  useReveal();
+  return <Home />;
 }
-
-export default App;
