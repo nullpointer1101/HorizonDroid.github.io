@@ -7,16 +7,16 @@
       "status": "active",
       "company": "Xiaomi",
       "support_group": "https://t.me/superxornplayground",
-      "image_url": "https://wiki.lineageos.org/images/devices/davinci.png"
+      "image": "/img/devices/davinci.webp"
     },
     {
-      "device_name": "Redmi 13C | POCO C65",
+      "device_name": "Redmi 13C / POCO C65",
       "codename": "gale",
       "maintainer": "SuperVannXツ",
       "status": "active",
       "company": "Xiaomi",
       "support_group": "https://t.me/epankngopi",
-      "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-c65.jpg"
+      "image": "/img/devices/gale.webp"
     },
     {
       "device_name": "Redmi Note 9 Pro",
@@ -25,16 +25,16 @@
       "status": "active",
       "company": "Xiaomi",
       "support_group": "",
-      "image_url": "https://wiki.lineageos.org/images/devices/miatoll.png"
+      "image": "/img/devices/miatoll.webp"
     },
     {
-      "device_name": "Poco X5 5G/Redmi Note 12 5G",
+      "device_name": "Poco X5 5G / Redmi Note 12 5G",
       "codename": "stone",
       "maintainer": "JARVIS",
       "status": "active",
       "company": "Xiaomi",
       "support_group": "https://t.me/dsidesupport",
-      "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-x5-5g.jpg"
+      "image": "/img/devices/stone.webp"
     },
     {
       "device_name": "Redmi Note 10 Pro",
@@ -43,7 +43,7 @@
       "status": "active",
       "company": "Xiaomi",
       "support_group": "https://t.me/Djampt",
-      "image_url": "https://wiki.lineageos.org/images/devices/sweet.png"
+      "image": "/img/devices/sweet.webp"
     },
     {
       "device_name": "Redmi Note 8",
@@ -52,16 +52,16 @@
       "status": "active",
       "company": "Xiaomi",
       "support_group": "https://t.me/hkprojection",
-      "image_url": "https://wiki.lineageos.org/images/devices/ginkgo.png"
+      "image": "/img/devices/ginkgo.webp"
     },
     {
-      "device_name": "Xiaomi Mi 11x Pro/Redmi K40 Pro+",
+      "device_name": "Xiaomi Mi 11X Pro / Redmi K40 Pro+",
       "codename": "haydn",
       "maintainer": "Akshay",
       "status": "active",
       "company": "Xiaomi",
       "support_group": "https://t.me/pandemonium_haydn",
-      "image_url": "https://wiki.lineageos.org/images/devices/haydn.png"
+      "image": "/img/devices/haydn.webp"
     },
     {
       "device_name": "Redmi Note 13 Pro 5G / Poco X6",
@@ -70,7 +70,7 @@
       "status": "active",
       "company": "Xiaomi",
       "support_group": "https://t.me/JR205",
-      "image_url": "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-x6.jpg"
+      "image": "/img/devices/garnet.webp"
     },
     {
       "device_name": "Poco X3 NFC",
@@ -79,7 +79,7 @@
       "status": "active",
       "company": "Xiaomi",
       "support_group": "https://t.me/ArataXDummy",
-      "image_url": "https://wiki.lineageos.org/images/devices/surya.png"
+      "image": "/img/devices/surya.webp"
     },
     {
       "device_name": "OnePlus 6",
@@ -88,16 +88,16 @@
       "status": "active",
       "company": "OnePlus",
       "support_group": "https://t.me/pandemonium_haydn",
-      "image_url": "https://wiki.lineageos.org/images/devices/enchilada.png"
+      "image": "/img/devices/enchilada.webp"
     },
     {
-      "device_name": "Poco F5/Redmi Note 12 Turbo",
+      "device_name": "Poco F5 / Redmi Note 12 Turbo",
       "codename": "marble",
       "maintainer": "MaulsXSMGReborn",
       "status": "active",
       "company": "Xiaomi",
       "support_group": "https://t.me/mauls_build",
-      "image_url": "https://wiki.lineageos.org/images/devices/marble.png"
+      "image": "/img/devices/marble.webp"
     }
   ]
 }
